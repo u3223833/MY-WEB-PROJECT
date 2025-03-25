@@ -219,3 +219,33 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 180px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+  z-index: 999;
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
