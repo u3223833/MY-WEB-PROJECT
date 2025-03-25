@@ -8,23 +8,29 @@
 </head>
 <body>
 
- <!-- HEADER / NAVIGATION -->
+  <!-- HEADER / NAV -->
   <header>
-    <div class="container nav-container">
+    <div class="nav-container container">
       <div class="logo">
-        <a href="#home">ROBIN BOYD</a>
+        <a href="index.html">ROBIN BOYD</a>
       </div>
       <nav>
         <ul>
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a href="projects.html" id="projectsLink">Projects</a>
+            <ul class="dropdown-content" id="projectsDropdown">
+              <li><a href="manning-clark.html">Manning Clark House</a></li>
+              <li><a href="fenner.html">Fenner House</a></li>
+              <li><a href="churchill.html">Churchill House</a></li>
+            </ul>
+          </li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  
 
   <!-- PAGE HEADING -->
   <section class="page-heading">
@@ -36,12 +42,11 @@
   <!-- GALLERY GRID -->
   <main>
     <section class="gallery-section container">
-      <!-- Image placeholders; replace with actual <img> tags as needed -->
+      <!-- Replace placeholders with actual images -->
       <div class="gallery-item">Image 1</div>
       <div class="gallery-item">Image 2</div>
       <div class="gallery-item">Image 3</div>
       <div class="gallery-item">Image 4</div>
-      <!-- Add more images as needed -->
     </section>
   </main>
 
@@ -49,7 +54,8 @@
   <footer>
     <p>This website was produced by students in the Faculty of Arts & Design, University of Canberra, 2025.</p>
   </footer>
-<script src="assets/js/dropdown.js"></script>
+
+  <!-- JavaScript for Dropdown -->
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
-
