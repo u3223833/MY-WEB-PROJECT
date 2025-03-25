@@ -10,7 +10,7 @@
 
   <!-- HEADER / NAV -->
   <header>
-    <div class="nav-container container">
+    <div class="container nav-container">
       <div class="logo">
         <a href="index.html">ROBIN BOYD</a>
       </div>
@@ -18,14 +18,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li class="dropdown">
-            <a href="projects.html" id="projectsLink" class="active">Projects</a>
-            <ul class="dropdown-content" id="projectsDropdown">
-              <li><a href="manning-clark.html">Manning Clark House</a></li>
-              <li><a href="fenner.html">Fenner House</a></li>
-              <li><a href="churchill.html">Churchill House</a></li>
-            </ul>
-          </li>
+          <li><a href="projects.html" class="active">Projects</a></li>
           <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </nav>
@@ -39,24 +32,28 @@
     </div>
   </section>
 
-  <!-- PROJECTS OVERVIEW -->
+  <!-- PROJECTS GRID -->
   <main>
     <section class="projects-section container">
-      <p>
-        Below is an overview of Robin Boyd's notable works. Click any of the dropdown items above 
-        to explore specific houses in detail.
-      </p>
+      <!-- Project Card 1 -->
+      <article class="project-card">
+        <h2>Project Title 1</h2>
+        <p>Brief description: year, location, significance.</p>
+      </article>
 
-      <!-- Optional: Add a small listing or images here -->
+      <!-- Project Card 2 -->
       <article class="project-card">
-        <h2>General Project 1</h2>
+        <h2>Project Title 2</h2>
         <p>Brief description: year, location, significance.</p>
       </article>
+
+      <!-- Project Card 3 -->
       <article class="project-card">
-        <h2>General Project 2</h2>
+        <h2>Project Title 3</h2>
         <p>Brief description: year, location, significance.</p>
       </article>
-      <!-- etc. -->
+
+      <!-- Add more projects as needed -->
     </section>
   </main>
 
@@ -65,7 +62,5 @@
     <p>This website was produced by students in the Faculty of Arts & Design, University of Canberra, 2025.</p>
   </footer>
 
-  <!-- JavaScript for Dropdown -->
-  <script src="assets/js/script.js"></script>
 </body>
 </html>
