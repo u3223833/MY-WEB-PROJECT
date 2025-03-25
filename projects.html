@@ -8,22 +8,24 @@
 </head>
 <body>
 
-  <!-- HEADER / NAV -->
-  <header>
-    <div class="container nav-container">
-      <div class="logo">
-        <a href="index.html">ROBIN BOYD</a>
-      </div>
+  <!-- Navigation -->
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+               <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+          <a href="projects.html" id="projectsLink">Projects</a>
+          <ul class="dropdown-content" id="projectsDropdown">
+            <li><a href="manning.html">Manning Clark House</a></li>
+            <li><a href="churchill.html">Churchill House</a></li>
+            <li><a href="fenner.html">Fenner House</a></li>
+          </ul>
           <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </nav>
     </div>
   </header>
+  
 
   <!-- PAGE HEADING -->
   <section class="page-heading">
