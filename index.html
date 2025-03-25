@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Robin Boyd | Home</title>
+  <title>Robin Boyd | Single Page</title>
+
+  <!-- Link to external CSS file -->
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
@@ -12,61 +14,96 @@
   <header>
     <div class="container nav-container">
       <div class="logo">
-        <a href="index.html">ROBIN BOYD</a>
+        <a href="#home">ROBIN BOYD</a>
       </div>
       <nav>
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#gallery">Gallery</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
+  <!-- HERO SECTION (HOME) -->
+  <section id="home" class="hero">
     <div class="container hero-content">
       <h1>Welcome to the World of Robin Boyd</h1>
       <p>Discover the man who shaped Australian architecture with simplicity and modernism.</p>
-      <a href="about.html" class="btn">Learn More</a>
+      <a href="#about" class="btn">Learn More</a>
     </div>
   </section>
 
-  <!-- MAIN CONTENT -->
-  <main>
-    <section class="intro-section container">
-      <h2>Who Was Robin Boyd?</h2>
-      <p>
-        Robin Boyd was an influential Australian architect known for his distinctive 
-        modernist designs. He advocated for functional, simplified architecture and 
-        wrote extensively on the evolution of Australian building styles.
-      </p>
-      <p>
-        Learn more about his life, philosophy, and iconic projects throughout this site.
-      </p>
-    </section>
+  <!-- ABOUT SECTION -->
+  <section id="about" class="container section-padding">
+    <h2>Who is Robin Boyd?</h2>
+    <p>
+      Robin Gerard Penleigh Boyd (1919–1971) was one of Australia's most influential architects,
+      writers, and critics. He is best known for his advocacy of functional, modern design and
+      his writings on the Australian identity in architecture.
+    </p>
+    <p>
+      Boyd authored several books, including the groundbreaking
+      <em>The Australian Ugliness</em>, where he critiqued the aesthetic of Australian suburbs
+      and sparked a nationwide conversation about design.
+    </p>
+    <p>
+      Throughout his career, Boyd championed principles of simplicity, efficiency, and harmony
+      with the environment—ideals that continue to inspire architects today.
+    </p>
+  </section>
 
-    <!-- Example 2-column layout -->
-    <section class="two-column container">
-      <div class="column">
-        <h3>Design Philosophy</h3>
-        <p>
-          Boyd believed that architecture should be accessible, practical, and visually clean. 
-          He emphasized the use of space and materials to reflect a modern, straightforward design.
-        </p>
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="container section-padding">
+    <h2>Projects</h2>
+    <p>
+      Explore some of Robin Boyd’s most notable architectural projects, which demonstrate
+      his commitment to modernism, simplicity, and harmony with the environment.
+    </p>
+    <div class="projects-grid">
+      <!-- Repeat for each project -->
+      <article class="project-item">
+        <h3>Project Title 1</h3>
+        <p>Brief description of the project. Location, year, significance.</p>
+      </article>
+      <article class="project-item">
+        <h3>Project Title 2</h3>
+        <p>Brief description of the project. Location, year, significance.</p>
+      </article>
+      <article class="project-item">
+        <h3>Project Title 3</h3>
+        <p>Brief description of the project. Location, year, significance.</p>
+      </article>
+      <article class="project-item">
+        <h3>Project Title 4</h3>
+        <p>Brief description of the project. Location, year, significance.</p>
+      </article>
+      <!-- Add more as needed -->
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section id="gallery" class="container section-padding">
+    <h2>Gallery</h2>
+    <p>Explore photographs and sketches of Robin Boyd’s architectural works and inspirations.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <div class="placeholder">Image 1</div>
       </div>
-      <div class="column">
-        <h3>Impact & Legacy</h3>
-        <p>
-          From Canberra to Melbourne, Boyd's works remain iconic. He influenced generations of 
-          architects, advocating for design that aligns with Australia’s unique landscape and 
-          cultural context.
-        </p>
+      <div class="gallery-item">
+        <div class="placeholder">Image 2</div>
       </div>
-    </section>
-  </main>
+      <div class="gallery-item">
+        <div class="placeholder">Image 3</div>
+      </div>
+      <div class="gallery-item">
+        <div class="placeholder">Image 4</div>
+      </div>
+      <!-- Add more images as needed -->
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer>
