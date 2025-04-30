@@ -160,7 +160,7 @@ body {
     color: #ffffff;
   }
   .content-section h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     font-size: 1.5rem;
     text-transform: uppercase;
     color: #3a4197;
@@ -257,7 +257,7 @@ body {
   
   /* Hover effect for links */
   ul li a:hover {
-    background-color: #666666;
+    background-color: #1429766e;
     border-radius: 5px;
   }
   
@@ -296,13 +296,13 @@ body {
   
   nav ul li a {
     display: block;
-    padding: 14px 20px;
+    padding: 10px 10px;
     color: #3f468d;
     text-decoration: none;
   }
   
   nav ul li a:hover {
-    background-color: #ececec;
+    background-color: #ffffff;
   }
   
 
@@ -312,7 +312,7 @@ body {
 .boxes {
     display: flex;
     flex-wrap: wrap;       /* allows wrapping on smaller screens */
-    justify-content: left;
+    justify-content: center;
     padding: 2rem;
     gap: 2rem;             /* space between boxes */
   }
@@ -322,30 +322,32 @@ body {
     color: #fff;
     padding: 1.5rem;
     flex: 1 1 300px;      /* flexible basis for responsive layout */
-    max-width: 2500px;     /* you can limit the width so they don’t stretch too wide */
+    max-width: 3500px;     /* you can limit the width so they don’t stretch too wide */
     text-align: center;
-    border-radius: 4px;   /* small corner rounding (optional) */
+    border-radius: 20px;   /* small corner rounding (optional) */
   }
   .box1 {
-    background-color: #0c407c; /* slightly different navy (optional) */
+    background-color: #093d79; /* slightly different navy (optional) */
     color: #fff;
     padding: 1.5rem;
     flex: 1 1 300px;      /* flexible basis for responsive layout */
     max-width: 2500px;     /* you can limit the width so they don’t stretch too wide */
     text-align: center;
-    border-radius: 4px;   /* small corner rounding (optional) */
+    border-radius: 20px;   /* small corner rounding (optional) */
   }
   .textbox1 {
     text-align: center;
     color: #fff;
   }
   .textbox {
-    text-align: center;
+    text-align: centtre;
     color: #213e8c;
   }
   
+  
   .box h2 {
     margin-bottom: 0.5rem;
+    font-size: 1.5 rem;
   }
   
   .box p {
@@ -353,3 +355,103 @@ body {
     line-height: 1.5;
   }
   
+
+  /*GALLERY*/
+
+  .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3rem;
+      border-bottom: 1px solid #ccc;
+      font-weight: 500;
+      font-size: 2rem;
+      letter-spacing: 0.5px;
+    }
+
+    .top-bar .left,
+    .top-bar .right {
+      font-style: italic;
+    }
+
+    .gallery-wrapper {
+      padding: 3rem 2rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      background-color: #f0f0f0;
+      aspect-ratio: 4 / 3;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.04);
+      filter: grayscale(100%);
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 2rem;
+      left: 2rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 1rem 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    .overlay h3 {
+      margin: 0;
+      font-size: 1.4rem;
+      letter-spacing: 0.5px;
+    }
+
+    .overlay p {
+      margin-top: 0.4rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .top-bar {
+        font-size: 1.3rem;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+    .nav-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        border-top: 1px solid #ccc;
+        font-size: 1rem;
+        font-style: italic;
+        text-transform: uppercase;
+      }
+      
+      .nav-buttons a {
+        text-decoration: none;
+        color: black;
+        padding: 0.5rem 1rem;
+        border: 1px solid black;
+        transition: all 0.3s ease;
+      }
+      
+      .nav-buttons a:hover {
+        background-color: black;
+        color: white;
+      }
