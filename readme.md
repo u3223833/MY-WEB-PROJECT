@@ -23,7 +23,13 @@ For instance:
 
 Overall, the prototype gave me a solid base to work from, and most of its design decisions were successfully implemented in the final build, with a few thoughtful changes made to improve usability and responsiveness.
 
+## Design Theories and Concepts
 
+While designing the website, I applied several visual communication principles explored in class. I used a **grid-based layout**, influenced by Swiss Style (also known as the International Typographic Style), which values clarity, balance, and function. This helped ensure my content was well-aligned and easy to read.
+
+I also considered **User-Centred Design (UCD)** when thinking about accessibility, especially for older audiences who may be more interested in Robin Boyd’s work. I kept font sizes readable, avoided overwhelming colours, and ensured the navigation was intuitive. These choices were guided by what we learnt from *Don Norman’s* ideas on usability and affordances in design (*The Design of Everyday Things*).
+
+Finally, my decision to use a **minimalist aesthetic** was informed by Robin Boyd’s own design philosophy and his criticism of visual pollution, especially in his book *The Australian Ugliness* (1960). This guided me to keep the interface clean, with simple colour choices, negative space, and focus on structure over decoration.
 
 ## Helpful Resources
 
