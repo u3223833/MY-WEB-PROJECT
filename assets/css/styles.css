@@ -350,7 +350,7 @@ body {
   }
   
   .box {
-    background-color: #d1d8e0; /* slightly different navy (optional) */
+    background-color: #ffffff; /* slightly different navy (optional) */
     color: #fff;
     padding: 1.5rem;
     flex: 1 1 300px;      /* flexible basis for responsive layout */
@@ -438,28 +438,7 @@ body {
       filter: grayscale(100%);
     }
 
-    .overlay {
-      position: absolute;
-      bottom: 2rem;
-      left: 2rem;
-
-      color: #fff;
-      padding: 1rem 1.5rem;
-      font-size: 1.1rem;
-    }
-
-    .overlay h3 {
-      margin: 0;
-      font-size: 1.4rem;
-      letter-spacing: 0.5px;
-      align-content: center;
-    }
-
-    .overlay p {
-      margin-top: 0.4rem;
-      font-size: 0.9rem;
-      align-content: center;
-    }
+    
 
     @media (max-width: 600px) {
       .top-bar {
@@ -509,49 +488,7 @@ body {
         object-fit:contain;
         z-index: 1;
       }
-/*
-      .overlay {
-        position: relative;
-        z-index: 2;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0); 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        padding: 2rem;
-      }
-      
-      /* Animation 
-      .animate-fade-up {
-        opacity: 0;
-        transform: translateY(30px);
-        animation: fadeUp 1s ease-out forwards;
-      }
-      
-      @keyframes fadeUp {
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      
-   
-      .overlay {
-        position:sticky;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: rgb(255, 255, 255);
-        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
-      }
-      */
+
 
       .headline {
         font-size: 3rem;
@@ -773,21 +710,6 @@ body {
     position: relative;
   }
 
-  .masked-text {
-    align-items: center;
-    font-size: 10rem;
-    font-weight: bold;
-
-    text-align: center;
-    color: transparent;
-    background-image: url('https://robinboyd.org.au/wp-content/uploads/2016/12/robin_boyd_portrait.jpg'); 
-    background-size: 140%; /* Enlarged for smooth animation */
-    background-position: 0 50%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animate-background 5s infinite alternate linear;
-}
 
 @keyframes animate-background {
     0% {
@@ -799,6 +721,7 @@ body {
 }
 .box {
 	display:flex;
+  position: relative;
 }
 
 .box .inner {
@@ -844,4 +767,21 @@ body {
 	to {
 		left: -100%;
 	}
+}
+
+.view-more-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #18257a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-more-button:hover {
+  background-color: #ffffff;
+  color: #18257a;
+  transform: scale(1.05);
 }
