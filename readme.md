@@ -43,9 +43,4 @@ Finally, my decision to use a **minimalist aesthetic** was informed by Robin Boy
 
 I used ChatGPT to help review and clean up my CSS code. It pointed out repeated sections and suggested how to consolidate rules and fix small typos. I also asked for guidance on animation timing and media query structure, which helped me make the site more polished. 
 
-## Live Link
-
-You can view the live version of my project here:  
-[INSERT YOUR LIVE LINK HERE]
-
 
